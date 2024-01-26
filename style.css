@@ -1,0 +1,36 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+ 
+html,body{
+height:100%;
+width:100%;
+/* background: #EFEAE3; */
+}
+nav h4 a{
+    transition:all ease 0.4s;
+    position: relative;
+    z-index: 44;
+}
+nav h4::after{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    transition:all ease 0.4s;
+    border-radius: 50%;
+}
+nav h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+.hero h1{
+    font-family: Roboto;
+
+}
+
